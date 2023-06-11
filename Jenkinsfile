@@ -13,7 +13,7 @@ pipeline {
         }
 		stage('Sonar') {
 			steps {
-                sh 'mvn -B sonar' 
+                sh 'mvn -B sonar:sonar' 
             }
 		}
     }
