@@ -16,8 +16,10 @@ pipeline {
 				scannerHome = tool 'SonarQubeScanner'
 			}
 	
-			withSonarQubeEnv(installationName: 'SonarQube') { 
-			  sh 'mvn sonar:sonar'
+			steps {
+				withSonarQubeEnv(installationName: 'SonarQube') { 
+				  sh 'mvn sonar:sonar'
+				}
 			}
 		}
     }
