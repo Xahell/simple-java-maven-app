@@ -18,7 +18,7 @@
   </dependencies>
   
   <properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>.
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sonar.host.url>http://sonarqube:9000</sonar.host.url>
   </properties>
   
