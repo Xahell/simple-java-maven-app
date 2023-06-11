@@ -11,5 +11,10 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
+		stage('Sonar') {
+			steps {
+                sh 'mvn -B sonar' 
+            }
+		}
     }
 }
